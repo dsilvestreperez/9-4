@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class HypotenuseCalculater {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.printin("Welcome to the Hypotenuse Calculator");
+
+        //side a
+        System.out.print("Enter the lenght of the first side (a): ");
+        double a = scanner.nextDouble();
+
+        //side b
+        System.out.print("Enter the lenght of the second side (b): ");
+        double b = scanner.nextDouble();
+
+
+        //total
+        double c = Math.sqrt(a * a + b * b);
+
+        System.out.println("the lenght of the hypotenuse is: " , c);
+        System.out.println("Thank you for using the Hypotenuse Calculator!");
+
+        scanner.close();
+
+    }
+}
